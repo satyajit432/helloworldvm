@@ -8,11 +8,11 @@ This README provides a step-by-step guide to setting up a simple "Hello World" J
 
 Ensure you have the following installed:
 
-- [Java JDK 8+](https://www.oracle.com/java/technologies/javase-jdk8-downloads.html)
-- [Maven](https://maven.apache.org/install.html)
-- [Docker](https://docs.docker.com/get-docker/)
-- [Kubernetes](https://kubernetes.io/docs/setup/) (Minikube or a Kubernetes cluster)
-- [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
+- [Java JDK 8+]
+- [Maven]
+- [Docker]
+- [Kubernetes]
+- [kubectl CLI]
 
 ---
 
@@ -101,7 +101,9 @@ Ensure you have the following installed:
      - protocol: TCP
        port: 80
        targetPort: 8080
-     type: NodePort
+       nodeport:30001
+       type: NodePort
+   
    ```
 
 2. Apply the configuration:
